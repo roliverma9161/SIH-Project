@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareFlow | Medical Records</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+<header class="navbar dashboard-navbar">
+
+   <div class="logo">
+            <img rel="icon" src="logo.jpeg">
+            Nidan<span>Sarthi</span>
+        </div>
+
+
+    <nav>
+
+        <a href="patient-dashboard.html"
+           >
+            Dashboard
+        </a>
+
+        <a href="case_taking.html">
+            Case Taking
+        </a>
+
+        <a href="Appointment.html">
+            Appointments
+        </a>
+
+        <a href="records.html"class="active-nav">
+            Records
+        </a>
+
+    </nav>
+
+
+    <div class="profile-menu">
+
+        <div class="notification">
+            🔔
+            <span>2</span>
+        </div>
+
+        <div class="patient-avatar">
+            P
+        </div>
+
+        <div class="profile-name">
+            <strong>Patient</strong>
+            <small>My Account</small>
+        </div>
+
+    </div>
+
+</header>
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    YOUR HEALTH JOURNEY
+                </p>
+
+                <h1>
+                    Medical Records
+                </h1>
+
+                <p class="subtitle">
+                    Access your medical history, prescriptions,
+                    reports and previous consultations in one place.
+                </p>
+
+            </div>
+
+
+            <div class="header-icon">
+                📋
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="search-area">
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search records, doctors, diagnosis..."
+                >
+
+            </div>
+
+
+            <select id="recordFilter">
+
+                <option value="all">
+                    All Records
+                </option>
+
+                <option value="consultation">
+                    Consultations
+                </option>
+
+                <option value="prescription">
+                    Prescriptions
+                </option>
+
+                <option value="report">
+                    Lab Reports
+                </option>
+
+                <option value="diagnosis">
+                    Diagnosis
+                </option>
+
+            </select>
+
+        </section>
+
+
+
+        <!-- ================= HEALTH SUMMARY ================= -->
+
+        <section class="summary-grid">
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon blue">
+                    🩺
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Visits
+                    </span>
+
+                    <strong>
+                        08
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon green">
+                    💊
+                </div>
+
+                <div>
+
+                    <span>
+                        Prescriptions
+                    </span>
+
+                    <strong>
+                        05
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon purple">
+                    🧪
+                </
