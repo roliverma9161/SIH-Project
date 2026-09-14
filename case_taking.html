@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>NidanSarthi </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!--Navbar-->
+
+<header class="navbar dashboard-navbar">
+
+   <div class="logo">
+            <img rel="icon" src="logo.jpeg">
+            Nidan<span>Sarthi</span>
+        </div>
+
+
+    <nav>
+
+        <a href="patient-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="case_taking.html" class="active-nav">
+            Case Taking
+        </a>
+
+        <a href="Appointment.html">
+            Appointments
+        </a>
+
+        <a href="records.html">
+            Records
+        </a>
+
+    </nav>
+
+
+    <div class="profile-menu">
+
+        <div class="notification">
+            🔔
+            <span>2</span>
+        </div>
+
+        <div class="patient-avatar">
+            P
+        </div>
+
+        <div class="profile-name">
+            <strong>Patient</strong>
+            <small>My Account</small>
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="case-page">
+
+
+    <div class="case-container">
+
+
+        <!-- HEADER -->
+
+        <div class="case-header">
+
+            <div>
+
+                <p class="small-title">
+                    PATIENT CASE TAKING
+                </p>
+
+                <h1>
+                    Tell us how you're
+                    <span>feeling.</span>
+                </h1>
+
+                <p>
+                    You can type your response or simply
+                    speak naturally.
+                </p>
+
+            </div>
+
+
+            <div class="case-progress">
+
+                <span>01</span>
+
+                <div>
+                    <small>
+                        CASE PROGRESS
+                    </small>
+
+                    <strong>
+                        1 of 4
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- VOICE CARD -->
+
+        <div class="voice-card">
+
+
+            <div class="voice-card-header">
+
+                <div>
+
+                    <span class="case-label">
+                        STEP 1
+                    </span>
+
+                    <h2>
+                        What brings you here today?
+                    </h2>
+
+                    <p>
+                        Describe your main health concern
+                        in your own words.
+                    </p>
+
+                </div>
+
+
+                <div class="voice-status">
+                    ● Voice enabled
+                </div>
+
+            </div>
+
+
+
+            <!-- TEXT AREA -->
+
+            <textarea
+                id="voiceText"
+                class="voice-textarea"
+                placeholder="You can type here, or press the microphone and speak...">
+            </textarea>
+
+
+
+            <!-- VOICE BUTTON -->
+
+            <div class="voice-controls">
+
+                <button
+                    id="voiceButton"
+                    class="voice-button"
+                    onclick="toggleVoice()">
+
+                    🎙️ Start Speaking
+
+                </button>
+
+
+                <span class="voice-hint">
+                    Speak naturally • English
+                </span>
+
+            </div>
+
+
+
+            <!-- EXAMPLE -->
+
+            <div class="voice-example">
+
+                <span>💡</span>
+
+                <p>
+
+                    <strong>Example:</strong>
+
+                    “I have had a headache for
+                    three days and it gets worse
+                    in the evening.”
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- STRUCTURED PREVIEW -->
+
+        <div class="structured-card">
+
+            <div class="structured-header">
+
+                <div>
+
+                    <span class="case-label">
+                        SMART SUMMARY
+                    </span>
+
+                    <h2>
+                        Your information
+                    </h2>
+
+                </div>
+
+                <span class="draft">
+                    Draft
+                </span>
+
+            </div>
+
+
+            <div class="structured-grid">
+
+                <div class="structured-field">
+
+                    <label>
+                        Chief Complaint
+                    </label>
+
+                    <div>
+                        <span id="complaint">
+                            Not provided
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="structured-field">
+
+                    <label>
+                        Duration
+                    </label>
+
+                    <div>
+                        <span>
+                            Not provided
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="structured-field">
+
+                    <label>
+                        Severity
+                    </label>
+
+                    <div>
+                        <span>
+                            Not provided
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="structured-field">
+
+                    <label>
+                        Additional Information
+                    </label>
+
+                    <div>
+                        <span>
+                            Not provided
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="continue-button">
+
+                Continue to Next Step →
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
