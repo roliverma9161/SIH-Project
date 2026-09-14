@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>NidanSarthi</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     NAVBAR
+===================================== -->
+
+<header class="navbar dashboard-navbar">
+
+   <div class="logo">
+            <img rel="icon" src="logo.jpeg">
+            Nidan<span>Sarthi</span>
+        </div>
+
+
+    <nav>
+
+        <a href="patient-dashboard.html"
+           class="active-nav">
+            Dashboard
+        </a>
+
+        <a href="case_taking.html">
+            Case Taking
+        </a>
+
+        <a href="Appointment.html">
+            Appointments
+        </a>
+
+        <a href="records.html">
+            Records
+        </a>
+
+    </nav>
+
+
+    <div class="profile-menu">
+
+        <div class="notification">
+            🔔
+            <span>2</span>
+        </div>
+
+        <div class="patient-avatar">
+            P
+        </div>
+
+        <div class="profile-name">
+            <strong>Patient</strong>
+            <small>My Account</small>
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================
+     DASHBOARD
+===================================== -->
+
+<main class="dashboard-page">
+
+
+    <div class="dashboard-container">
+
+
+        <!-- =================================
+             WELCOME
+        ================================== -->
+
+        <section class="dashboard-welcome">
+
+            <div>
+
+                <p class="small-title">
+                    PATIENT PORTAL
+                </p>
+
+                <h1>
+                    Good afternoon, <span>Patient.</span>
+                </h1>
+
+                <p>
+                    Here's a quick overview of your
+                    healthcare journey.
+                </p>
+
+            </div>
+
+
+            <div class="secure-badge">
+
+                🔐
+
+                <div>
+
+                    <strong>
+                        Secure & Private
+                    </strong>
+
+                    <small>
+                        Your health information is protected
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             QUICK ACTIONS
+        ================================== -->
+
+        <section class="quick-actions">
+
+
+            <!-- VOICE CASE -->
+
+            <a
+                href="case_taking.html"
+                class="action-card voice-action">
+
+                <div class="action-icon">
+                    🎙️
+                </div>
+
+                <div class="action-content">
+
+                    <span>
+                        RECOMMENDED
+                    </span>
+
+                    <h2>
+                        Start Case Taking
+                    </h2>
+
+                    <p>
+                        Tell us about your health
+                        concern using your voice.
+                    </p>
+
+                </div>
+
+                <div class="action-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- APPOINTMENT -->
+
+            <a
+                href="Appointment.html"
+                class="action-card">
+
+                <div class="action-icon calendar-icon">
+                    📅
+                </div>
+
+                <div class="action-content">
+
+                    <span>
+                        APPOINTMENT
+                    </span>
+
+                    <h2>
+                        Book a Consultation
+                    </h2>
+
+                    <p>
+                        Find a doctor and schedule
+                        an appointment.
+                    </p>
+
+                </div>
+
+                <div class="action-arrow">
+                    →
+                </div>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================
+             DASHBOARD GRID
+        ================================== -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- =================================
+                 UPCOMING APPOINTMENT
+            ================================== -->
+
+            <div class="dashboard-card appointment-card">
+
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span>
+                            NEXT APPOINTMENT
+                        </span>
+
+                        <h2>
+                            Upcoming consultation
+                        </h2>
+
+                    </div>
+
+                    <a href="Appointment.html">
+                        View all
+                    </a>
+
+                </div>
+
+
+                <div class="Appointment-details">
+
+
+                    <div class="doctor-avatar">
+                        DR
+                    </div>
+
+
+                    <div class="doctor-info">
+
+                        <h3>
+                            Dr. Sarah Mehta
+                        </h3>
+
+                        <p>
+                            General Physician
+                        </p>
+
+                        <div class="Appointment-time">
+
+                            📅
+                            <strong>
+                                18 September 2026
+                            </strong>
+
+                        </div>
+
+                        <div class="Appointment-time">
+
+                            🕐
+                            <strong>
+                                10:30 AM
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="appointment-status">
+                        Confirmed
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="Appointment-button"
+                    onclick="viewAppointment()">
+
+                    View Appointment Details →
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 HEALTH PROFILE
+            ================================== -->
+
+            <div class="dashboard-card health-card">
+
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span>
+                            MY HEALTH
+                        </span>
+
+                        <h2>
+                            Health profile
+                        </h2>
+
+                    </div>
+
+                    <a href="#">
+                        Edit
+                    </a>
+
+                </div>
+
+
+                <div class="health-items">
+
+
+                    <div class="health-item">
+
+                        <span class="health-icon">
+                            👤
+                        </span>
+
+                        <div>
+
+                            <small>
+                                Age
+                            </small>
+
+                            <strong>
+                                20 years
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="health-item">
+
+                        <span class="health-icon">
+                            ⚖️
+                        </span>
+
+                        <div>
+
+                            <small>
+                                Blood Group
+                            </small>
+
+                            <strong>
+                                Not added
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="health-item">
+
+                        <span class="health-icon">
+                            🩺
+                        </span>
+
+                        <div>
+
+                            <small>
+                                Allergies
+                            </small>
+
+                            <strong>
+                                Not added
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="health-item">
+
+                        <span class="health-icon">
+                            💊
+                        </span>
+
+                        <div>
+
+                            <small>
+                                Medications
+                            </small>
+
+                            <strong>
+                                Not added
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="outline-button">
+
+                    Complete

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NidanSarthi</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="navbar dashboard-navbar">
+
+    <div class="logo">
+            <img rel="icon" src="logo.jpeg">
+            Nidan<span>Sarthi</span>
+        </div>
+
+
+    <nav>
+
+        <a href="doctor-dashboard.html"
+           class="active-nav">
+            Dashboard
+        </a>
+
+        <a href="doctor-patients.html">
+            Patients
+        </a>
+
+        <a href="doctor-appointments.html">
+            Appointments
+        </a>
+
+        <a href="doctor-records.html">
+            Records
+        </a>
+
+    </nav>
+
+
+    <div class="profile-menu">
+
+        <div class="notification">
+
+            🔔
+
+            <span>3</span>
+
+        </div>
+
+
+        <div class="patient-avatar doctor-avatar-small">
+
+            SM
+
+        </div>
+
+
+        <div class="profile-name">
+
+            <strong>
+                Dr. Sarah Mehta
+            </strong>
+
+            <small>
+                General Physician
+            </small>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN DASHBOARD
+========================================= -->
+
+<main class="doctor-dashboard-page">
+
+
+    <div class="doctor-dashboard-container">
+
+
+        <!-- =====================================
+             WELCOME
+        ====================================== -->
+
+        <section class="doctor-welcome">
+
+            <div>
+
+                <p class="small-title">
+                    DOCTOR PORTAL
+                </p>
+
+
+                <h1>
+                    Good afternoon,
+                    <span>Dr. Mehta.</span>
+                </h1>
+
+
+                <p>
+                    Here's what's happening with your
+                    patients today.
+                </p>
+
+            </div>
+
+
+            <div class="doctor-status">
+
+                <span class="online-dot"></span>
+
+                <div>
+
+                    <strong>
+                        Available for consultation
+                    </strong>
+
+                    <small>
+                        Online
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             STATISTICS
+        ====================================== -->
+
+        <section class="doctor-stats">
+
+
+            <div class="doctor-stat-card">
+
+                <div class="stat-icon">
+                    📅
+                </div>
+
+                <div>
+
+                    <span>
+                        TODAY'S APPOINTMENTS
+                    </span>
+
+                    <strong>
+                        08
+                    </strong>
+
+                    <small>
+                        3 remaining
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="doctor-stat-card">
+
+                <div class="stat-icon">
+                    👥
+                </div>
+
+                <div>
+
+                    <span>
+                        TOTAL PATIENTS
+                    </span>
+
+                    <strong>
+                        124
+                    </strong>
+
+                    <small>
+                        +6 this month
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="doctor-stat-card">
+
+                <div class="stat-icon">
+                    🎙️
+                </div>
+
+                <div>
+
+                    <span>
+                        PENDING CASES
+                    </span>
+
+                    <strong>
+                        05
+                    </strong>
+
+                    <small>
+                        Need review
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="doctor-stat-card">
+
+                <div class="stat-icon">
+                    📋
+                </div>
+
+                <div>
+
+                    <span>
+                        COMPLETED CASES
+                    </span>
+
+                    <strong>
+                        31
+                    </strong>
+
+                    <small>
+                        This month
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             MAIN GRID
+        ====================================== -->
+
+        <section class="doctor-main-grid">
+
+
+            <!-- =================================
+                 TODAY'S APPOINTMENTS
+            ================================== -->
+
+            <div class="doctor-card appointments-doctor-card">
+
+
+                <div class="doctor-card-heading">
+
+                    <div>
+
+                        <span>
+                            SCHEDULE
+                        </span>
+
+                        <h2>
+                            Today's appointments
+                        </h2>
+
+                    </div>
+
+
+                    <a href="doctor-appointments.html">
+                        View calendar →
+                    </a>
+
+                </div>
+
+
+
+                <!-- APPOINTMENT 1 -->
+
+                <div class="doctor-appointment">
+
+
+                    <div class="appointment-time-doctor">
+
+                        <strong>
+                            10:30
+                        </strong>
+
+                        <small>
+                            AM
+                        </small>
+
+                    </div>
+
+
+                    <div class="appointment-patient-avatar">
+                        AK
+                    </div>
+
+
+                    <div class="doctor-patient-info">
+
+                        <strong>
+                            Ananya Kapoor
+                        </strong>
+
+                        <small>
+                            General Consultation
+                        </small>
+
+                    </div>
+
+
+                    <span class="consultation-status">
+
+                        Confirmed
+
+                    </span>
+
+
+                    <button
+                        onclick="openPatientCase()"
+                        class="view-case-button">
+
+                        View Case
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- APPOINTMENT 2 -->
+
+                <div class="doctor-appointment">
+
+
+                    <div class="appointment-time-doctor">
+
+                        <strong>
+                            12:00
+                        </strong>
+
+                        <small>
+                            PM
+                        </small>
+
+                    </div>
+
+
+                    <div class="appointment-patient-avatar">
+                        RS
+                    </div>
+
+
+                    <div class="doctor-patient-info">
+
+                        <strong>
+                            Rahul Sharma
+                        </strong>
+
+                        <small>
+                            Follow-up consultation
+                        </small>
+
+                    </div>
+
+
+                    <span class="consultation-status">
+
+                        Confirmed
+
+                    </span>
+
+
+                    <button
+                        onclick="openPatientCase()"
+                        class="view-case-button">
+
+                        View Case
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- APPOINTMENT 3 -->
+
+                <div class="doctor-appointment">
+
+
+                    <div class="appointment-time-doctor">
+
+                        <strong>
+                            02:30
+                        </strong>
+
+                        <small>
+                            PM
+                        </small>
+
+                    </div>
+
+
+                    <div class="appointment-patient-avatar">
+                        PS
+                    </div>
+
+
+                    <div class="doctor-patient-info">
+
+                        <strong>
+                            Priya Singh
+                        </strong>
+
+                        <small>
+                            Abdominal pain
+                        </small>
+
+                    </div>
+
+
+                    <span class="consultation-status pending">
+
+                        Pending
+
+                    </span>
+
+
+                    <button
+                        onclick="openPatientCase()"
+                        class="view-case-button">
+
+                        View Case
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- APPOINTMENT 4 -->
+
+                <div class="doctor-appointment">
+
+
+                    <div class="appointment-time-doctor">
+
+                        <strong>
+                            04:00
+                        </strong>
+
+                        <small>
+                            PM
+                        </small>
+
+                    </div>
+
+
+                    <div class="appointment-patient-avatar">
+                        VM
+                    </div>
+
+
+                    <div class="doctor-patient-info">
+
+                        <strong>
+                            Vikram Malhotra
+                        </strong>
+
+                        <small>
+                            Routine check-up
+                        </small>
+
+                    </div>
+
+
+                    <span class="consultation-status">
+
+                        Confirmed
+
+                    </span>
+
+
+                    <button
+                        onclick="openPatientCase()"
+                        class="view-case-button">
+
+                        View Case
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 PENDING CASES
+            ================================== -->
+
+            <div class="doctor-card pending-cases-card">
+
+
+                <div class="doctor-card-heading">
+
+                    <div>
+
+                        <span>
+                            CASE TAKING
+                        </span>
+
+                        <h2>
+                            Cases waiting for review
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="pending-case">
+
+
+                    <div class="pending-case-icon">
+                        🎙️
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Ananya Kapoor
+                        </strong>
+
+                        <small>
+                            Submitted 12 min ago
+                        </small>
+
+                        <p>
+                            Headache • 3 days
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        onclick="reviewCase()">
+
+                        Review
+
+                    </button>
+
+                </div>
+
+
+
+                <div class="pending-case">
+
+
+                    <div class="pending-case-icon">
+                        🎙️
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Priya Singh
+                        </strong>
+
+                        <small>
+                            Submitted 28 min ago
+                        </small>
+
+                        <p>
+                            Abdominal pain • 3 days
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        onclick="reviewCase()">
+
+                        Review
+
+                    </button>
+
+                </div>
+
+
+
+                <div class="pending-case">
+
+
+                    <div class="pending-case-icon">
+                        📝
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Rahul Sharma
+                        </strong>
+
+                        <small>
+                            Submitted 45 min ago
+                        </small>
+
+                        <p>
+                            Fever • 2 days
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        onclick="reviewCase()">
+
+                        Review
+
+                    </button>
+
+                </div>
+
+
+
+                <button
+                    class="view-all-cases">
+
+                    View all pending cases →
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 STRUCTURED PATIENT CASE
+            ================================== -->
+
+            <div class="doctor-card structured-case-card">
+
+
+                <div class="doctor-card-heading">
+
+                    <div>
+
+                        <span>
+                            LATEST PATIENT CASE
+                        </span>
+
+                        <h2>
+                            Structured case summary
+                        </h2>
+
+                    </div>
+
+
+                    <span class="ai-badge">
+                        ✦ AI Structured
+                    </span>
+
+                </div>
+
+
+
+                <div class="patient-case-header">
+
+
+                    <div class="patient-large-avatar">
+                        AK
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Ananya Kapoor
+                        </h3>
+
+                        <p>
+                            24 years • Female
+                        </p>
+
+                    </div>
+
+
+                    <span class="case-status">
+                        Ready for review
+                    </span>
+
+                </div>
+
+
+
+                <div class="case-summary-grid">
+
+
+                    <div>
+
+                        <label>
+                            CHIEF COMPLAINT
+                        </label>
+
+                        <strong>
+                            Headache
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+                            DURATION
+                        </label>
+
+                        <strong>
+                            3 days
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+                            SEVERITY
+                        </label>
+
+                        <strong>
+                            Moderate
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+                            PATTERN
+                        </label>
+
+                        <strong>
+                            Worse in evening
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="patient-statement">
+
+                    <span>
+                        PATIENT'S STATEMENT
+                    </span>
+
+                    <p>
+
+                        “I have been experiencing a
+                        headache for about three days.
+                        It becomes worse in the evening
+                        and sometimes I feel tired.”
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="case-actions">
+
+                    <button
+                        class="primary-case-button"
+                        onclick="reviewCase()">
+
+                        Review Full Case →
+
+                    </button>
+
+
+                    <button
+                        class="secondary-case-button">
+
+                        View Patient Record
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 QUICK TOOLS
+            ================================== -->
+
+            <div class="doctor-card quick-tools-card">
+
+
+                <div class="doctor-card-heading">
+
+                    <div>
+
+                        <span>
+                            QUICK ACCESS
+                        </span>
+
+                        <h2>
+                            Doctor tools
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="doctor-tools">
+
+
+                    <button>
+
+                        <span>👥</span>
+
+                        <strong>
+                            Patient List
+                        </strong>
+
+                        <small>
+                            Manage patients
+                        </small>
+
+                    </button>
+
+
+                    <button>
+
+                        <span>📅</span>
+
+                        <strong>
+                            Calendar
+                        </strong>
+
+                        <small>
+                            Manage schedule
+                        </small>
+
+                    </button>
+
+
+                    <button>
+
+                        <span>📋</span>
+
+                        <strong>
+                            Records
+                        </strong>
+
+                        <small>
+                            Medical history
+                        </small>
+
+                    </button>
+
+
+                    <button>
+
+                        <span>🔔</span>
+
+                        <strong>
+                            Notifications
+                        </strong>
+
+                        <small>
+                            3 new alerts
+                        </small>
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="dashboard-footer">
+
+    <div class="logo">
+        Care<span>Flow</span>
+    </div>
+
+
+    <p>
+        Smarter healthcare. Simpler case taking.
+    </p>
+
+
+    <span>
+        🔐 Secure Doctor Portal
+    </span>
+
+</footer>
+
+
+
+<script>
+
+    function openPatientCase() {
+
+        alert(
+            "Patient case details will open here."
+        );
+
+    }
+
+
+    function reviewCase() {
+
+        alert(
+            "Full structured patient case will open here."
+        );
+
+    }
+
+</script>
+
+
+</body>
+
+</html>
