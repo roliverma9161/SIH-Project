@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NidhanSarthi | Book Appointment</title>
+
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar dashboard-navbar">
+
+   <div class="logo">
+            <img rel="icon" src="logo.jpeg">
+            Nidan<span>Sarthi</span>
+        </div>
+
+
+    <nav>
+
+        <a href="patient-dashboard.html"
+           class="active-nav">
+            Dashboard
+        </a>
+
+        <a href="case_taking.html">
+            Case Taking
+        </a>
+
+        <a href="Appointment.html">
+            Appointments
+        </a>
+
+        <a href="records.html">
+            Records
+        </a>
+
+    </nav>
+
+
+    <div class="profile-menu">
+
+        <div class="notification">
+            🔔
+            <span>2</span>
+        </div>
+
+        <div class="patient-avatar">
+            P
+        </div>
+
+        <div class="profile-name">
+            <strong>Patient</strong>
+            <small>My Account</small>
+        </div>
+
+    </div>
+
+</header>
+
+
+    <!-- MAIN -->
+    <main class="page-container">
+
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+
+            <div>
+                <p class="small-title">CARE MADE SIMPLE</p>
+
+                <h1>
+                    Book an Appointment
+                </h1>
+
+                <p class="subtitle">
+                    Find the right doctor and choose a convenient
+                    time for your consultation.
+                </p>
+            </div>
+
+            <div class="header-icon">
+                📅
+            </div>
+
+        </section>
+
+
+        <!-- APPOINTMENT AREA -->
+        <section class="appointment-layout">
+
+
+            <!-- LEFT SIDE -->
+            <div class="booking-card">
+
+                <div class="card-heading">
+                    <div class="heading-icon">
+                        👨‍⚕️
+                    </div>
+
+                    <div>
+                        <h2>Appointment Details</h2>
+                        <p>
+                            Tell us when you'd like to visit
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- DOCTOR -->
+                <div class="form-group">
+
+                    <label>Select Doctor</label>
+
+                    <select id="doctor">
+
+                        <option value="">
+                            Choose a doctor
+                        </option>
+
+                        <option value="dr-ananya">
+                            Dr. Ananya Sharma — General Physician
+                        </option>
+
+                        <option value="dr-rohan">
+                            Dr. Rohan Verma — Cardiologist
+                        </option>
+
+                        <option value="dr-neha">
+                            Dr. Neha Singh — Dermatologist
+                        </option>
+
+                        <option value="dr-rahul">
+                            Dr. Rahul Mehta — Orthopedic
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- DATE -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Appointment Date</label>
+
+                        <input
+                            type="date"
+                            id="appointmentDate"
+                        >
+
+                    </div>
+
+
+                    <!-- TIME -->
+                    <div class="form-group">
+
+                        <label>Preferred Time</label>
+
+                        <select id="appointmentTime">
+
+                            <option value="">
+                                Select time
+                            </option>
+
+                            <option>09:00 AM</option>
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>03:00 PM</option>
+                            <option>04:00 PM</option>
+                            <option>05:00 PM</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- APPOINTMENT TYPE -->
+                <div class="form-group">
+
+                    <label>Appointment Type</label>
+
+                    <div class="appointment-types">
+
+                        <label class="type-option">
+
+                            <input
+                                type="radio"
+                                name="type"
+                                value="in-person"
+                                checked
+                            >
+
+                            <span class="type-content">
+                                <strong>🏥 In-Person</strong>
+                                <small>Visit the clinic</small>
+                            </span>
+
+                        </label>
+
+
+                        <label class="type-option">
+
+                            <input
+                                type="radio"
+                                name="type"
+                                value="online"
+                            >
+
+                            <span class="type-content">
+                                <strong>💻 Online</strong>
+                                <small>Video consultation</small>
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REASON -->
+                <div class="form-group">
+
+                    <label>
+                        Reason for Visit
+                        <span class="optional">
+                            Optional
+                        </span>
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        placeholder="Briefly describe your concern..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- BUTTON -->
+                <button
+                    class="book-btn"
+                    id="bookAppointment"
+                >
+                    Book Appointment
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+            <aside class="side-section">
+
+
+                <!-- DOCTOR INFO -->
+                <div class="info-card">
+
+                    <div class="info-title">
+                        <span>✓</span>
+                        Why CareFlow?
+                    </div>
+
+                    <div class="benefit">
+                        <span>🔒</span>
+                        <div>
+                            <strong>Secure</strong>
+                            <p>
+                                Your health information stays private.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <span>⚡</span>
+                        <div>
+                            <strong>Easy Booking</strong>
+                            <p>
+                                Book your appointment in seconds.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <span>🔔</span>
+                        <div>
+                            <strong>Reminders</strong>
+                            <p>
+                                Never miss an appointment.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- HELP CARD -->
+                <div class="help-card">
+
+                    <div class="help-icon">
+                        💙
+                    </div>
+
+                    <div>
+                        <h3>Need help?</h3>
+
+                        <p>
+                            Our support team is here to help
+                            you with your appointment.
+                        </p>
+
+                        <button>
+                            Contact Support →
+                        </button>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <!-- UPCOMING APPOINTMENT -->
+        <section class="upcoming-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="small-title">
+                        YOUR SCHEDULE
+                    </p>
+
+                    <h2>Upcoming Appointments</h2>
+                </div>
+
+                <span class="appointment-count">
+                    1 Upcoming
+                </span>
+
+            </div>
+
+
+            <div class="appointment-item">
+
+                <div class="date-box">
+
+                    <span>SEP</span>
+                    <strong>18</strong>
+
+                </div>
+
+
+                <div class="appointment-details">
+
+                    <h3>
+                        Dr. Ananya Sharma
+                    </h3>
+
+                    <p>
+                        General Physician
+                    </p>
+
+                    <div class="appointment-meta">
+                        <span>🕐 10:00 AM</span>
+                        <span>🏥 In-Person</span>
+                    </div>
+
+                </div>
+
+
+                <div class="appointment-status">
+                    Confirmed
+                </div>
+
+
+                <button class="view-btn">
+                    View Details
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="appointment.js"></script>
+
+</body>
+</html>
